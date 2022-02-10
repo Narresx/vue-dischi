@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
-    <div class="container">
-      <Header />
-      <Main />
-    </div>
+  <div class="container-fluid">
+    <Header class="background-header" />
+    <Main />
   </div>
 </template>
 
@@ -20,5 +18,8 @@ export default {
 </script>
 
 <style lang="scss">
+.background-header {
+  background-color: rgb(46, 58, 70);
+}
 @import "./assets/sass/style.scss";
 </style>
