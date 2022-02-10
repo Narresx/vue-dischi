@@ -1,9 +1,9 @@
 <template>
-  <figure class="p-3">
+  <header class="p-3">
     <img
       src="https://www.nicepng.com/png/full/811-8110513_spotify-logo-spotify.png"
     />
-  </figure>
+  </header>
 </template>
 
 <script>
