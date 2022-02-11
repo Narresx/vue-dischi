@@ -3,7 +3,7 @@
     <img
       src="https://www.nicepng.com/png/full/811-8110513_spotify-logo-spotify.png"
     />
-    <Search />
+    <Search @searchValue="searchValue" />
   </header>
 </template>
 
@@ -11,6 +11,19 @@
 import Search from "./Search.vue";
 export default {
   name: "Header",
+
+  data() {
+    return {
+      genre: "All",
+    };
+  },
+
+  methods: {
+    searchValue(value) {
+      this.genre = value;
+    },
+  },
+
   components: {
     Search,
   },
