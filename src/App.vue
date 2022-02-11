@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <Header class="background-header" @searchValue="genre" />
+    <Header class="background-header" @searchValue="searchValue" />
     <Main />
   </div>
 </template>

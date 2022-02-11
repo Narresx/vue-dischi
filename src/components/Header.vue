@@ -25,7 +25,8 @@ export default {
     },
 
     getChoise() {
-      this.$emit("searchValue", this.resultSearch);
+      // !!!!!!!! non uso la funzione da nessuna parte
+      this.$emit("searchValue1", this.resultSearch);
     },
   },
 
