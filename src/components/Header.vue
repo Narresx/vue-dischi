@@ -15,12 +15,17 @@ export default {
   data() {
     return {
       genre: "All",
+      resultSearch: "All",
     };
   },
 
   methods: {
     searchValue(value) {
       this.genre = value;
+    },
+
+    getChoise() {
+      this.$emit("searchValue", this.resultSearch);
     },
   },
 
