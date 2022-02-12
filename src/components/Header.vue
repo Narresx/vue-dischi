@@ -14,19 +14,14 @@ export default {
 
   data() {
     return {
-      genre: "All",
-      resultSearch: "All",
+      resultSearch: "",
     };
   },
 
   methods: {
     searchValue(value) {
-      this.genre = value;
-    },
-
-    getChoise() {
-      // !!!!!!!! non uso la funzione da nessuna parte
-      this.$emit("searchValue1", this.resultSearch);
+      this.$emit("searchValue", value);
+      this.resultSearch = value;
     },
   },
 
